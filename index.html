@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Within — Retreat Journal</title>
+  <meta name="description" content="An offline journal for a Christmas retreat on the angels and inner awareness.">
+  <meta name="theme-color" content="#090d22" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6f1e6" media="(prefers-color-scheme: light)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Within">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="view" tabindex="-1"></main>
+
+  <nav id="tabs" aria-label="Sections">
+    <a href="#/journal" data-tab="journal">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19.5 8.5a2.1 2.1 0 0 0-3-3L5 17z"/><path d="M14.5 7.5l2 2"/></svg>
+      <span>Journal</span>
+    </a>
+    <a href="#/topics" data-tab="topics">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="17" r="1.7"/><circle cx="11" cy="6.5" r="1.7"/><circle cx="19" cy="10.5" r="1.7"/><circle cx="15.5" cy="19" r="1.7"/><path d="M6 15.4 10.1 8.1M12.6 7.3l4.8 2.4M18.4 12.1l-2.2 5.2M13.8 18.7 6.7 17.3"/></svg>
+      <span>Topics</span>
+    </a>
+    <a href="#/sources" data-tab="sources">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5c3-1.2 6-1 9 1 3-2 6-2.2 9-1V19c-3-1.2-6-1-9 1-3-2-6-2.2-9-1z"/><path d="M12 6.5V20"/></svg>
+      <span>Sources</span>
+    </a>
+    <a href="#/more" data-tab="more">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7z"/><path d="M18.5 16.5c.2 1.4.9 2.1 2.3 2.3-1.4.2-2.1.9-2.3 2.3-.2-1.4-.9-2.1-2.3-2.3 1.4-.2 2.1-.9 2.3-2.3z"/></svg>
+      <span>More</span>
+    </a>
+  </nav>
+
+  <div id="sheet-root"></div>
+  <div id="viewer" role="dialog" aria-label="Photo" hidden></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
